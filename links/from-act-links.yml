@@ -5,7 +5,7 @@ metadata:
 spec:
   boxes-relation:
     router-mq:
-#########################SIM#################################################
+      #########################SIM#################################################
       - name: act-demo1-conn
         from:
           box: act-fix
@@ -13,14 +13,7 @@ spec:
         to:
           box: demo-conn1
           pin: fix_to_send
-      - name: act-demo2-conn
-        from:
-          box: act-fix
-          pin: to_send_demo-conn2
-        to:
-          box: demo-conn2
-          pin: fix_to_send
-##############################################################################
+    ##############################################################################
     router-grpc:
       - name: act-to-check1
         from:
