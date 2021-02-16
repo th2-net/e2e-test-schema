@@ -93,7 +93,7 @@ spec:
             - field-name: session_alias
               expected-value: demo-dc2
               operation: EQUAL
-    - name: out_codec_decode_fix-demo-server1
+    - name: out_fix-demo-server1
       connection-type: mq
       attributes: ["decoder_out", "parsed", "publish"]
       filters:
@@ -101,7 +101,7 @@ spec:
             - field-name: session_alias
               expected-value: fix-demo-server1
               operation: EQUAL
-    - name: out_codec_decode_fix-demo-server2
+    - name: out_fix-demo-server2
       connection-type: mq
       attributes: ["decoder_out", "parsed", "publish"]
       filters:
@@ -118,5 +118,8 @@ spec:
       limits:
         memory: 200Mi
         cpu: 200m
+      requests:
+        memory: 100Mi
+        cpu: 20m
 #      mounitng:
 #        TBD
