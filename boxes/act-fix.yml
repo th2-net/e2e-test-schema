@@ -4,7 +4,7 @@ metadata:
   name: act-fix
 spec:
   image-name: ghcr.io/th2-net/th2-act-template-j
-  image-version: 2.2.0
+  image-version: 3.3.0
   type: th2-act
   pins:
     # Server
